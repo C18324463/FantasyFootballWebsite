@@ -1,0 +1,63 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    
+        <!--Page Title-->
+        <title>Assignment | Fantasy Football</title>
+    </head>
+    <body style="background-color: aliceblue">
+    
+        <!--Navigation bar-->
+        <nav id='rowNavbar' class='navbar navbar-expand-lg navbar-light bg-light'>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href='/' class='btn btn-link'>Stats</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href='/team' class='btn btn-link'>Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href='/update' class='btn btn-link'>Update</a>
+                    </li>
+                </ul>
+    
+            </div>
+            <span>
+                <a href='/logout' class='btn btn-link'>Logout</a>
+            </span>
+            <span>
+                <a href='/help' class='btn btn-link'>Help</a>
+            </span>
+        </nav>
+
+
+        <div class="container" >
+            <div id='rowTable' class="row" style="margin-top: 20px; margin-bottom: 20px;">
+
+                <div id='teamTable' class="col-sm-6 stat-table" style="background-color: white; height: 50%; position: relative; width: 50%; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+                    <h3 class="my-4">My Team</h3>
+                </div>
+
+                <div id='playerTable' class="col-sm-5 stat-table" style="background-color: white; position: relative; width: 50%; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 50px; ">
+                    <h3 class="my-4">Players</h3>
+                    <form id='formPlayers'>
+                        <div class='form'>
+                            <div class='form-group row'>
+                                <label for="FilterName" class='col-2 col-form-label'>Filter</label>
+                                <input id='FilterName' name='FilterName' placeholder="Eg. Forward" type="text" class="form-control col-8 mr-3">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                    
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="team.js"></script>
+
+    </body>
+</html>
